@@ -26,8 +26,12 @@ puts "----------"
 puts "Please enter a store name"
 store7 = gets.chomp
 
-store = Store.create(name: "#{store7}")
-store.save!
+store = Store.new(name: "#{store7}")
+
+store.save
+
+puts store.errors.messages
+
 
 
 
