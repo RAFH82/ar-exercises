@@ -23,4 +23,12 @@ puts "----------"
 @store4.employees.create(first_name: "Lewis", last_name: "Hamilton", hourly_rate: 50)
 @store4.employees.create(first_name: "Sebastien", last_name: "Vettel", hourly_rate: 40)
 
+puts "Please enter a store name"
+store7 = gets.chomp
+
+store = Store.create(name: "#{store7}")
+store.save
+
+
+
 
